@@ -42,7 +42,7 @@ export default function Home() {
                                     height={5800}
                                     alt={`page ${pageNumber}`}
                                     className="w-full"
-                                    
+                                    unoptimized
                                 />
                                 
                             </CarouselItem>
