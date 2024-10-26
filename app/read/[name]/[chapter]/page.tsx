@@ -41,7 +41,6 @@ export default function Home() {
                                     width={6000}
                                     height={5800}
                                     alt={`page ${pageNumber}`}
-                                    className="w-full"
                                     unoptimized
                                 />
                                 
