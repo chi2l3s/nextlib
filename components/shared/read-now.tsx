@@ -5,7 +5,7 @@ const ReadNow = () => {
     return (
         <div className="bg-neutral-600 rounded-md flex flex-col items-start justify-center p-10 my-10 max-w-3xl mx-auto text-white">
             <div className="text-white items-start text-xl transition ">
-                <div className="flex hover:text-rose-600 cursor-pointer">
+                <div className="flex hover:text-rose-600 cursor-pointer transition">
                     <p>Сейчас читают</p>
                     <ChevronRight/>
                 </div>
@@ -18,6 +18,7 @@ const ReadNow = () => {
                     id="jk-rich-thots"
                     name="Зажиточные школьницы"
                     type="Манга"
+                    chapters={4}
                 />
             </div>
         </div>

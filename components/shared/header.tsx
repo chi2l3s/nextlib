@@ -1,11 +1,16 @@
+'use client';
+
 import { Building2, ChevronDown, ChevronRight, Compass, Drama, Flame, Layers, Star, Ungroup, User, UserCircle, Users } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Separator } from "@/components/ui/separator";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+    const router = useRouter();
+
     return (
         <div className="flex justify-center items-center p-5 bg-neutral-700">
-            <p className="font-semibold text-2xl text-white px-10">
+            <p className="font-semibold text-2xl text-white px-10 cursor-pointer" onClick={() => router.push('/')}>
                 NEXTLIB
             </p>
             <Popover>
