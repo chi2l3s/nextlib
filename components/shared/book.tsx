@@ -22,9 +22,11 @@ const Book = ({
         router.push(`/read/${id}/1`)
     }
 
+    const src = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/books/${id}/1/001.png`
+
     return (
         <div className="flex text-white items-center justify-center group my-3 cursor-pointer" onClick={onClick}>
-            <Image src='/books/jk-rich-thots/1/001.png' alt="image" width={100} height={100}
+            <Image src={src} alt="image" width={100} height={100}
                 className="rounded-md"
             />
             <div className="flex flex-col items-start ml-5">
